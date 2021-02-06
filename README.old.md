@@ -1,28 +1,3 @@
-# Inlämningsuppgift 3
-
-Du ska i denna inlämningsuppgift göra en skapa konto - sida samt en konto-sida. Du ska implementera
-enligt nedanstående skiss.
-
-Figmaskiss: https://www.figma.com/file/sEMBLMjbgtdlAkRTgfbVrF/React-Create-account?node-id=0%3A1
-
-## Hur det ska fungera
-* Användaren ska kunna "registrera" ett konto vars uppgifter ska sparas i en redux store.
-* Efter registering ska användaren tas till en konto-sida som visar ens uppgifter.
-* För att ändra sin uppgifter behöver man trycka på en knapp och då ska inputfält visas istället.
-* Uppgiften kan lösas med React Router det är dock **inte** ett krav utan går att lösa utan också.
-
-## Krav för godkänt
-
-* Din sida ska vara implementerad enligt skiss.
-* Du ska använda dig av Redux för att spara kontouppgifter.
-
-## Inlämning
-
-Inlämning är på Github i det repo som skapades via Github Classroom. Ta länken till ditt repo och
-lägg till som en kommentar på Ping Pong och lämna in uppgiften där senast **10 feb 2021 23:59**.
-
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
