@@ -14,7 +14,7 @@ export const setMailAction = (email) => {
 
 export const setPasswordAction = (password) => {
     return{
-        type: 'SET_PASSOWRD',
+        type: 'SET_PASSWORD',
         password:password
     }
 }

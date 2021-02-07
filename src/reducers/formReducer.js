@@ -2,28 +2,28 @@
 
 export  const nameReducer = (state = '', action) => {
     switch (action.type){
-        case 'SET_NAME':
-            return action.name;            
-            default:
-            return state;    
+      case 'SET_NAME':
+    return action.name;            
+      default:
+    return state;    
     }
 }
 
-export const mailReducer = (state = '', action) => {
+export const еmailReducer = (state = '', action) => {
     switch (action.type){
-        case 'SET_MAIL':
-            return action.email;            
-            default:
-            return state;    
+      case 'SET_MAIL':
+        return action.email;            
+      default:
+        return state;    
     }
 }
 
 export const passwordReducer = (state = '', action) => {
     switch (action.type){
         case 'SET_PASSWORD':
-            return action.password;            
-            default:
-            return state;    
+          return action.password;            
+        default:
+          return state;    
     }
 }
 
