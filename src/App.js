@@ -2,11 +2,13 @@ import React from 'react';
 import { BrowserRouter,  Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 
-import Error from './components/Error';
 import  Account from "./components/Account";
 import Forms  from "./components/Forms";
+import Error from './components/Error';
+
 
 function App() {
+  
   return (
     <main className='wrapper'>
       <div className='header'>

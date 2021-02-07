@@ -1,33 +1,27 @@
-import  {combineReducers} from 'redux'
 
-const nameReducer = (state = '', action) =>{
+
+export  const nameReducer = (state = '', action) => {
     switch (action.type){
         case 'SET_NAME':
-            return {               
-                name: action.payload
-            }
+            return action.name;            
             default:
             return state;    
     }
 }
 
-const mailReducer = (state = '', action) =>{
+export const mailReducer = (state = '', action) => {
     switch (action.type){
         case 'SET_MAIL':
-            return {               
-                mail: action.payload
-            }
+            return action.email;            
             default:
             return state;    
     }
 }
 
-const passwordReducer = (state = '', action) =>{
+export const passwordReducer = (state = '', action) => {
     switch (action.type){
         case 'SET_PASSWORD':
-            return {               
-                password: action.payload
-            }
+            return action.password;            
             default:
             return state;    
     }
@@ -35,7 +29,7 @@ const passwordReducer = (state = '', action) =>{
 
 
 
-const changeAccountReducer = (state = false, action) => {
+export const changeAccountReducer = (state = false, action) =>  {
     switch (action.type) {
       case 'CHANGE_ACCOUNT':
         return action.change;
@@ -44,17 +38,19 @@ const changeAccountReducer = (state = false, action) => {
     }
   }
 
+  export const disableTextReducer = (state = false, action)=>  {
+    switch (action.type) {
+      case 'DISABLE_TEXT':
+        return action.disable;
+      default:
+        return state;
+    }
+  }
+
+
+
  
 
-const rootReduser = combineReducers({
-    name: nameReducer,
-    mail : mailReducer,
-    password : passwordReducer,
-    changeAccount: changeAccountReducer,
-    //disableInput: disableInputRecucer
-})
-
-export default rootReduser;
 
 
 

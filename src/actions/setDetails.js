@@ -1,21 +1,21 @@
-export function setNameAction(name){
+export const setNameAction = (name)=>{
     return{
         type: 'SET_NAME',
-        payload:name
+        name:name
     }
 }
 
-export function setMailAction(mail){
+export const setMailAction = (email) => {
     return{
         type: 'SET_MAIL',
-        payload:mail
+        email:email
     }
 }
 
-export default function setPasswordAction(password){
+export const setPasswordAction = (password) => {
     return{
         type: 'SET_PASSOWRD',
-        payload:password
+        password:password
     }
 }
 
@@ -24,6 +24,13 @@ export default function setPasswordAction(password){
     return {
       type: 'CHANGE_ACCOUNT',
       change: boolean
+    }
+  }
+
+  export  const disableTextAction= (boolean) => {
+    return {
+      type: 'DISABLE_TEXT',
+      disable: boolean
     }
   }
   
