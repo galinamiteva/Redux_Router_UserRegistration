@@ -3,8 +3,9 @@ import { BrowserRouter,  Switch, Route, Redirect } from "react-router-dom";
 import './App.css';
 
 import  Account from "./components/Account";
-import Forms  from "./components/Forms";
+
 import Error from './components/Error';
+import Registration from './components/Registration';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
               <Redirect to="/registration" />
             </Route>
 
-            <Route  path='/registration' component={ Forms } />
+            <Route  path='/registration' component={ Registration } />
 
             <Route path= '/account' component={ Account } /> 
 

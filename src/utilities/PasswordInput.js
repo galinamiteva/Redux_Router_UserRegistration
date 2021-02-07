@@ -7,12 +7,12 @@ function PasswordInput(props) {
 
     const password = useSelector( state =>state.password )
     const readOnly = useSelector( state =>state.disableText )
-    const dispatch = useDispatch();
+    const dispatch = useDispatch();   
 
     return (
 
         <section >
-            <input type='password' id='password'   className={props.oldClass ? props.oldClass : props.newClass}  readOnly={readOnly ? true : false}  onChange={ event => dispatch (setPasswordAction(event.target.value)) } value={password} placeholder="******"/>
+            <input type='password' id='password'   className={props.oldClass ? props.oldClass : props.newClass}  readOnly={readOnly ? true : false}  onChange={event => dispatch( setPasswordAction(event.target.value)) } placeholder="********"  defaultValue={password}   />
             <label htmlFor="password" className="form__label form__label_password"> Password: </label>
         </section>
 

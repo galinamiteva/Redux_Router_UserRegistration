@@ -10,10 +10,10 @@ function NameInput(props) {
     const dispatch = useDispatch();   
     return (   
         <section >
-        <input type='text' id='name'  className={props.oldClass ? props.oldClass : props.newClass} readOnly={readOnly ? true : false} onChange={event => dispatch( setNameAction(event.target.value)) } placeholder="Jane Goodall"  value={name}   />
-        <label htmlFor="name" className="form__label form__label_name">Name </label>
+            <input type='text' id='name'  className={props.oldClass ? props.oldClass : props.newClass} readOnly={readOnly ? true : false} onChange={event => dispatch( setNameAction(event.target.value)) } placeholder="Jane Goodall"  value={name}   />
+            <label htmlFor="name" className="form__label form__label_name">Name </label>
        </section>
-    )
+    );
 
 }
 
